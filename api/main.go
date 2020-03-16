@@ -23,12 +23,6 @@ func Ping(c *gin.Context) {
 	}.Result())
 }
 
-// HelloJwt 通过JwtToken验证查看接口
-func HelloJwt(c *gin.Context) {
-	c.JSON(http.StatusOK, serializer.Response{
-		Msg: "Hello!",
-	}.Result())
-}
 
 // CurrentUser 获取当前用户
 func CurrentUser(c *gin.Context) *model.User {
